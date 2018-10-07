@@ -1,0 +1,648 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.col {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+header {
+  background-image: url("../images/header_obraz_1.jpeg");
+  background-size: cover;
+  position: relative;
+  padding-left: 130px;
+  padding-right: 130px;
+  height: 100vh;
+}
+
+header .logo {
+  display: flex;
+  margin-top: 30px;
+  padding: 0;
+  color: #FFF;
+}
+
+header .logo img {
+  height: 35px;
+}
+
+header nav {
+  text-align: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-top: 30px;
+  float: right;
+  list-style-type: none;
+}
+
+header nav ul li {
+  padding: 7px 22px;
+}
+
+header nav ul li a {
+  color: #FFF;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: lightblue;
+  text-decoration: none;
+  transition: .3s;
+}
+
+header nav ul li:last-child {
+  border: 2px solid #5b7bc5;
+  border-radius: 20px;
+}
+
+header .header-text {
+  padding-top: 100px;
+  text-align: left;
+}
+
+header .header-text .napis-gora {
+  font-size: 40px;
+  font-weight: bold;
+  color: #FFF;
+  line-height: 1.2;
+  visibility: visible;
+  animation-delay: 0.2s;
+}
+
+header .header-text .napis-gora p {
+  margin: 0;
+}
+
+header .header-text .napis-dol {
+  font-size: 15px;
+  color: #72b2f2;
+  visibility: visible;
+  animation-delay: 0.4s;
+}
+
+header .header-text .napis-dol p {
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+header .header-text .napis-button .button {
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  background-color: #6166ed;
+  font-size: 15px;
+  color: #FFF;
+  border-style: none;
+  visibility: visible;
+  animation-delay: 0.6s;
+}
+
+header .header-text .napis-button .button:hover {
+  background-color: #302d64;
+}
+
+header .header-logo-lotto {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header .header-logo-lotto img {
+  background-color: none;
+  max-width: 93px;
+  max-height: 63px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 991px) and (max-width: 1280px) {
+  header {
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 85vh;
+  }
+  header nav ul {
+    padding-top: 40px;
+    float: right;
+  }
+  header nav ul li:last-child {
+    border: none;
+    border-radius: 20px;
+  }
+  header .header-text {
+    padding-top: 70px;
+    text-align: left;
+  }
+  header .header-text .napis-gora {
+    font-size: 40px;
+  }
+  header .header-text .napis-dol {
+    font-size: 15px;
+  }
+  header .header-text .napis-dol p {
+    margin-top: 10px;
+    margin-bottom: 80px;
+  }
+  header .header-text .napis-button .button {
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+  }
+  header .header-logo-lotto {
+    margin: 100px 0;
+  }
+  header .header-logo-lotto img {
+    max-width: 75px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+  header {
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 80vh;
+  }
+  header nav {
+    text-align: center;
+  }
+  header nav ul {
+    padding-top: 30px;
+  }
+  header nav ul li:last-child {
+    border: none;
+  }
+  header .header-text {
+    padding-top: 70px;
+    text-align: left;
+  }
+  header .header-text .napis-gora {
+    font-size: 40px;
+  }
+  header .header-text .napis-dol {
+    font-size: 15px;
+  }
+  header .header-logo-lotto {
+    margin: 100px 0;
+  }
+  header .header-logo-lotto img {
+    max-width: 75px;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 70vh;
+  }
+  header .logo {
+    display: flex;
+    justify-content: center;
+  }
+  header nav {
+    text-align: center;
+  }
+  header nav ul {
+    flex-direction: column;
+    padding-top: 30px;
+    margin: 0;
+    padding: 20px 0 0 0;
+    float: none;
+  }
+  header nav ul li:last-child {
+    border: none;
+  }
+  header .header-text {
+    padding-top: 50px;
+    text-align: center;
+  }
+  header .header-text .napis-gora {
+    font-size: 30px;
+  }
+  header .header-text .napis-dol {
+    font-size: 15px;
+  }
+  header .header-text .napis-button .button {
+    font-size: 12px;
+  }
+  header .header-logo-lotto {
+    display: none;
+  }
+}
+
+/* SECTION-WHAT WE DO */
+.what-we-do {
+  padding: 100px 100px;
+}
+
+.what-we-do .wwd-opis img {
+  max-width: 560px;
+  width: 100%;
+  height: 395px;
+}
+
+.what-we-do .wwd-opis .text {
+  padding: 30px 60px;
+  text-align: center;
+}
+
+.what-we-do .wwd-opis .text h2 {
+  color: #332f91;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.what-we-do .wwd-opis .text p {
+  font-weight: 550;
+}
+
+.what-we-do .wwd-opis-cards {
+  padding: 100px 0;
+}
+
+.what-we-do .wwd-opis-cards .cards {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.what-we-do .wwd-opis-cards .cards a {
+  text-decoration: none;
+}
+
+.what-we-do .wwd-opis-cards .cards a .card-1,
+.what-we-do .wwd-opis-cards .cards a .card-2,
+.what-we-do .wwd-opis-cards .cards a .card-3,
+.what-we-do .wwd-opis-cards .cards a .card-4 {
+  margin-top: 20px;
+  width: 250px;
+  height: 400px;
+  box-shadow: 0 0 4rem 1px rgba(55, 53, 154, 0.15);
+}
+
+.what-we-do .wwd-opis-cards .cards a .card-1:hover button,
+.what-we-do .wwd-opis-cards .cards a .card-2:hover button,
+.what-we-do .wwd-opis-cards .cards a .card-3:hover button,
+.what-we-do .wwd-opis-cards .cards a .card-4:hover button {
+  background-color: #161765;
+}
+
+.what-we-do .wwd-opis-cards .cards a .card-1 img,
+.what-we-do .wwd-opis-cards .cards a .card-2 img,
+.what-we-do .wwd-opis-cards .cards a .card-3 img,
+.what-we-do .wwd-opis-cards .cards a .card-4 img {
+  width: 106px;
+  height: 110px;
+  margin: 30px;
+}
+
+.what-we-do .wwd-opis-cards .cards a .card-1 h4,
+.what-we-do .wwd-opis-cards .cards a .card-2 h4,
+.what-we-do .wwd-opis-cards .cards a .card-3 h4,
+.what-we-do .wwd-opis-cards .cards a .card-4 h4 {
+  color: #161765;
+  margin-left: 20px;
+}
+
+.what-we-do .wwd-opis-cards .cards a .card-1 p,
+.what-we-do .wwd-opis-cards .cards a .card-2 p,
+.what-we-do .wwd-opis-cards .cards a .card-3 p,
+.what-we-do .wwd-opis-cards .cards a .card-4 p {
+  margin: 30px 20px 0 20px;
+  color: #161765;
+  font-weight: 500;
+}
+
+.what-we-do .wwd-opis-cards .cards a .card-1 button,
+.what-we-do .wwd-opis-cards .cards a .card-2 button,
+.what-we-do .wwd-opis-cards .cards a .card-3 button,
+.what-we-do .wwd-opis-cards .cards a .card-4 button {
+  width: 100%;
+  height: 15%;
+  margin-top: 15%;
+  background-color: #4b479e;
+  color: #FFF;
+  border: none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .what-we-do {
+    padding: 30px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .what-we-do {
+    padding: 20px 10px;
+  }
+}
+
+/* SECTION TECHNOLOGY */
+.technology {
+  padding: 100px 100px;
+  background-color: #f0f0f0;
+}
+
+.technology .col-xs-12 {
+  padding: 0;
+  margin: 0;
+}
+
+.technology .col-xs-12 .technology-opis {
+  text-align: center;
+  padding: 130px 60px;
+}
+
+.technology .col-xs-12 .technology-opis h2 {
+  color: #4b479e;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+.technology .col-xs-12 .technology-opis p {
+  padding-bottom: 30px;
+}
+
+.technology .col-xs-12 .technology-stack {
+  text-align: center;
+}
+
+.technology .col-xs-12 .technology-stack img {
+  max-width: 585px;
+  height: 545px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .technology {
+    padding: 30px 100px;
+  }
+  .technology .technology-opis {
+    text-align: center;
+    padding: 30px 60px;
+  }
+  .technology .technology-stack {
+    text-align: center;
+  }
+  .technology .technology-stack img {
+    max-width: 585px;
+    width: 90%;
+    height: 545px;
+  }
+}
+
+@media (max-width: 767px) {
+  .technology {
+    padding: 30px 30px;
+  }
+  .technology .technology-opis {
+    padding: 30px 30px;
+  }
+  .technology .technology-stack {
+    text-align: center;
+  }
+  .technology .technology-stack img {
+    max-width: 585px;
+    width: 90%;
+    height: 545px;
+  }
+}
+
+/* SECTION TECHNOLOGY-2 */
+.technology-2 {
+  padding: 100px 100px;
+  background-color: #FFF;
+}
+
+.technology-2 .technology-stack {
+  text-align: center;
+}
+
+.technology-2 .technology-stack img {
+  max-width: 585px;
+  width: 100%;
+  height: 545px;
+}
+
+.technology-2 .technology-opis {
+  text-align: center;
+  padding: 130px 60px;
+}
+
+.technology-2 .technology-opis h2 {
+  color: #4b479e;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+.technology-2 .technology-opis p {
+  padding-bottom: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .technology-2 {
+    padding: 30px 100px;
+  }
+  .technology-2 .technology-stack {
+    text-align: center;
+  }
+  .technology-2 .technology-stack img {
+    max-width: 585px;
+    width: 90%;
+    height: 545px;
+  }
+  .technology-2 .technology-opis {
+    text-align: center;
+    padding: 30px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .technology-2 {
+    padding: 30px 30px;
+    display: flex;
+  }
+  .technology-2 .technology-stack {
+    text-align: center;
+  }
+  .technology-2 .technology-stack img {
+    max-width: 585px;
+    width: 90%;
+    height: 545px;
+  }
+  .technology-2 .technology-opis {
+    padding: 30px 30px;
+  }
+}
+
+/* SEKCJA FORMULARZ KONTAKOTWY */
+.form-contact {
+  background-color: #4b479e;
+  padding: 90px 100px 90px 40px;
+}
+
+.form-contact .dane {
+  padding-top: 80px;
+}
+
+.form-contact .dane p {
+  color: #FFF;
+  font-size: 14px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.form-contact .dane p span {
+  color: #7dbd6e;
+}
+
+.form-contact .fonts .social-media {
+  display: flex;
+}
+
+.form-contact .fonts .social-media .icons {
+  color: #FFF;
+  margin-right: 24px;
+  font-size: 17px;
+}
+
+.form-contact .fonts .social-media .icons:hover {
+  color: green;
+}
+
+.form-contact h2 {
+  color: #FFF;
+  margin: 0 0 20px 0;
+}
+
+.form-contact .form-group {
+  position: relative;
+}
+
+.form-contact .form-group + .form-group {
+  margin-top: 30px;
+}
+
+.form-contact .form-label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #FFF;
+  font-weight: 500;
+  background-color: #4b479e;
+  z-index: 10;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+
+.form-contact .focused .form-label {
+  transform: translateY(-125%);
+  font-size: .75em;
+}
+
+.form-contact .form-input {
+  position: relative;
+  background-color: #4b479e;
+  padding: 12px 0 5px 0;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  color: #FFF;
+  box-shadow: 0 1px 0 0 #FFF;
+  transition: box-shadow 150ms ease-out;
+}
+
+.form-contact .form-input:focus {
+  box-shadow: 0 2px 0 0 red;
+}
+
+.form-contact textarea {
+  margin-top: 40px;
+  resize: none;
+  background: 0 0;
+  top: 10px;
+  border: 0;
+  box-shadow: 0 1px 0 0 #FFF;
+  font-weight: 500;
+  line-height: 2rem;
+  outline: none;
+  padding: 1rem 0;
+  width: 100%;
+  color: #FFF;
+}
+
+.form-contact textarea:focus {
+  box-shadow: 0 2px 0 0 red;
+}
+
+.form-contact .textarea-label {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  color: #FFF;
+  font-weight: 500;
+}
+
+.form-contact .send-button {
+  text-align: right;
+  margin-top: 40px;
+}
+
+.form-contact .send-button .button {
+  text-align: right;
+  padding: 15px 40px;
+  background-color: #4b479e;
+  border-radius: 25px;
+  border: 1px solid #7dbd6e;
+  color: #7dbd6e;
+}
+
+.form-contact .send-button .button:hover {
+  background-color: #7dbd6e;
+  color: #FFF;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .form-contact {
+    padding: 20px 100px 90px 40px;
+  }
+  .form-contact h2 {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-contact {
+    padding: 30px 10px 30px 10px;
+  }
+  .form-contact h2 {
+    padding-top: 30px;
+  }
+  .form-contact .send-button {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
