@@ -215,7 +215,7 @@ header .header-logo-lotto img {
   header {
     padding-left: 10px;
     padding-right: 10px;
-    height: 70vh;
+    height: 80vh;
   }
   header .logo {
     display: flex;
@@ -366,32 +366,28 @@ header .header-logo-lotto img {
   background-color: #f0f0f0;
 }
 
-.technology .col-xs-12 {
-  padding: 0;
-  margin: 0;
-}
-
-.technology .col-xs-12 .technology-opis {
+.technology .technology-opis {
   text-align: center;
   padding: 130px 60px;
 }
 
-.technology .col-xs-12 .technology-opis h2 {
+.technology .technology-opis h2 {
   color: #4b479e;
   padding-bottom: 30px;
   font-weight: bold;
 }
 
-.technology .col-xs-12 .technology-opis p {
+.technology .technology-opis p {
   padding-bottom: 30px;
 }
 
-.technology .col-xs-12 .technology-stack {
+.technology .technology-stack {
   text-align: center;
 }
 
-.technology .col-xs-12 .technology-stack img {
+.technology .technology-stack img {
   max-width: 585px;
+  width: 100%;
   height: 545px;
 }
 
